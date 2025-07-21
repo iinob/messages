@@ -1,0 +1,8 @@
+.env
+content/*
+node_modules/
+ct.json
+userdata.json
+words.json
+*.pem
+*.save
