@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+	<title>msg</title>
+</head>
+
+<body>
+	<script>
+		ws = new WebSocket('http://127.0.0.1:8080');
+		ws.onopen = function(event) {
+			ws.send('hello server!');
+			ws.onmessage = function(event) {
+				console.log(event.data);
+			}
+		}
+	</script>
+</body>
